@@ -1,0 +1,14 @@
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\bin\Debug\net6.0\Exercice_2_7_B.exe
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\bin\Debug\net6.0\Exercice_2_7_B.deps.json
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\bin\Debug\net6.0\Exercice_2_7_B.runtimeconfig.json
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\bin\Debug\net6.0\Exercice_2_7_B.dll
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\bin\Debug\net6.0\Exercice_2_7_B.pdb
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\obj\Debug\net6.0\Exercice_2_7_B.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\obj\Debug\net6.0\Exercice_2_7_B.AssemblyInfoInputs.cache
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\obj\Debug\net6.0\Exercice_2_7_B.AssemblyInfo.cs
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\obj\Debug\net6.0\Exercice_2_7_B.csproj.CoreCompileInputs.cache
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\obj\Debug\net6.0\Exercice_2_7_B.dll
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\obj\Debug\net6.0\refint\Exercice_2_7_B.dll
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\obj\Debug\net6.0\Exercice_2_7_B.pdb
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\obj\Debug\net6.0\Exercice_2_7_B.genruntimeconfig.cache
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercice_2_7_B\Exercice_2_7_B\obj\Debug\net6.0\ref\Exercice_2_7_B.dll
