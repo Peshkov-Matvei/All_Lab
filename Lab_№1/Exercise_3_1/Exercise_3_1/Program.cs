@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            double a = 0.1, b = 1.0, h = 0.1, x = 0.1, c = 0.0001, fact, p = -1.0, s, n, g;
+            double a = 0.1, b = 1.0, h = 0.1, x = 0.1, c = 0.0001, p = -1.0, fact, s, n, g;
             n = (b - a) / h + 1;
             for (int j = 1; j <= n; j++)
             {
