@@ -9,7 +9,7 @@
             {
                 s += Math.Cos(x * i) / Math.Pow(x, i - 1);
             }
-            Console.WriteLine(s);
+            Console.WriteLine("{0:f4}", s);
         }
     }
 }

@@ -12,3 +12,17 @@ C:\Users\peshk\OneDrive\Рабочий стол\Информатика и про
 C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercise_2_4\Exercise_2_4\obj\Debug\net6.0\Exercise_2_4.pdb
 C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercise_2_4\Exercise_2_4\obj\Debug\net6.0\Exercise_2_4.genruntimeconfig.cache
 C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\Лаба № 1\Exercise_2_4\Exercise_2_4\obj\Debug\net6.0\ref\Exercise_2_4.dll
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\bin\Debug\net6.0\Exercise_2_4.exe
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\bin\Debug\net6.0\Exercise_2_4.deps.json
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\bin\Debug\net6.0\Exercise_2_4.runtimeconfig.json
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\bin\Debug\net6.0\Exercise_2_4.dll
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\bin\Debug\net6.0\Exercise_2_4.pdb
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\obj\Debug\net6.0\Exercise_2_4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\obj\Debug\net6.0\Exercise_2_4.AssemblyInfoInputs.cache
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\obj\Debug\net6.0\Exercise_2_4.AssemblyInfo.cs
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\obj\Debug\net6.0\Exercise_2_4.csproj.CoreCompileInputs.cache
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\obj\Debug\net6.0\Exercise_2_4.dll
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\obj\Debug\net6.0\refint\Exercise_2_4.dll
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\obj\Debug\net6.0\Exercise_2_4.pdb
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\obj\Debug\net6.0\Exercise_2_4.genruntimeconfig.cache
+C:\Users\peshk\OneDrive\Рабочий стол\Информатика и программирование\All_Lab\Lab_№1\Exercise_2_4\Exercise_2_4\obj\Debug\net6.0\ref\Exercise_2_4.dll

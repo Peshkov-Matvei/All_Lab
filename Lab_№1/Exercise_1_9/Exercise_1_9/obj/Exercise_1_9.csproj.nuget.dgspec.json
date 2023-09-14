@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\Лаба № 1\\Exercise_1_9\\Exercise_1_9\\Exercise_1_9.csproj": {}
+    "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\All_Lab\\Lab_№1\\Exercise_1_9\\Exercise_1_9\\Exercise_1_9.csproj": {}
   },
   "projects": {
-    "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\Лаба № 1\\Exercise_1_9\\Exercise_1_9\\Exercise_1_9.csproj": {
+    "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\All_Lab\\Lab_№1\\Exercise_1_9\\Exercise_1_9\\Exercise_1_9.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\Лаба № 1\\Exercise_1_9\\Exercise_1_9\\Exercise_1_9.csproj",
+        "projectUniqueName": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\All_Lab\\Lab_№1\\Exercise_1_9\\Exercise_1_9\\Exercise_1_9.csproj",
         "projectName": "Exercise_1_9",
-        "projectPath": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\Лаба № 1\\Exercise_1_9\\Exercise_1_9\\Exercise_1_9.csproj",
+        "projectPath": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\All_Lab\\Lab_№1\\Exercise_1_9\\Exercise_1_9\\Exercise_1_9.csproj",
         "packagesPath": "C:\\Users\\peshk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\Лаба № 1\\Exercise_1_9\\Exercise_1_9\\obj\\",
+        "outputPath": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\All_Lab\\Lab_№1\\Exercise_1_9\\Exercise_1_9\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\peshk\\AppData\\Roaming\\NuGet\\NuGet.Config",

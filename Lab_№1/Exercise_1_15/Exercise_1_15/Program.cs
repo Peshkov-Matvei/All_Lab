@@ -15,7 +15,7 @@
                 old_znam =  y;
                 s += chis / znam;
             }
-            Console.WriteLine(s);
+            Console.WriteLine("{0:f4}", s);
         }
     }
 }

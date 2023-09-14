@@ -10,7 +10,7 @@
                 a *= i;
                 s += Math.Pow(-1, i) * Math.Pow(5, i) / a;
             }
-            Console.WriteLine(s);
+            Console.WriteLine("{0:f4}", s);
         }
     }
 }

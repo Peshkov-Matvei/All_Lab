@@ -14,7 +14,7 @@
                 {
                     s += Math.Pow(x, i);
                 }
-                Console.WriteLine(s);
+                Console.WriteLine("{0:f4}", s);
             }
             
         }

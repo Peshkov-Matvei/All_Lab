@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\Лаба № 1\\Exercise_1_16\\Exercise_1_16\\Exercise_1_16.csproj",
+      "projectUniqueName": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\All_Lab\\Lab_№1\\Exercise_1_16\\Exercise_1_16\\Exercise_1_16.csproj",
       "projectName": "Exercise_1_16",
-      "projectPath": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\Лаба № 1\\Exercise_1_16\\Exercise_1_16\\Exercise_1_16.csproj",
+      "projectPath": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\All_Lab\\Lab_№1\\Exercise_1_16\\Exercise_1_16\\Exercise_1_16.csproj",
       "packagesPath": "C:\\Users\\peshk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\Лаба № 1\\Exercise_1_16\\Exercise_1_16\\obj\\",
+      "outputPath": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\All_Lab\\Lab_№1\\Exercise_1_16\\Exercise_1_16\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\peshk\\AppData\\Roaming\\NuGet\\NuGet.Config",

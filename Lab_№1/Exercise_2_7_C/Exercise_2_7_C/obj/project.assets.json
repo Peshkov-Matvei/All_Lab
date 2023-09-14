@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\Лаба № 1\\Exercise_2_7_C\\Exercise_2_7_C\\Exercise_2_7_C.csproj",
+      "projectUniqueName": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\All_Lab\\Lab_№1\\Exercise_2_7_C\\Exercise_2_7_C\\Exercise_2_7_C.csproj",
       "projectName": "Exercise_2_7_C",
-      "projectPath": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\Лаба № 1\\Exercise_2_7_C\\Exercise_2_7_C\\Exercise_2_7_C.csproj",
+      "projectPath": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\All_Lab\\Lab_№1\\Exercise_2_7_C\\Exercise_2_7_C\\Exercise_2_7_C.csproj",
       "packagesPath": "C:\\Users\\peshk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\Лаба № 1\\Exercise_2_7_C\\Exercise_2_7_C\\obj\\",
+      "outputPath": "C:\\Users\\peshk\\OneDrive\\Рабочий стол\\Информатика и программирование\\All_Lab\\Lab_№1\\Exercise_2_7_C\\Exercise_2_7_C\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\peshk\\AppData\\Roaming\\NuGet\\NuGet.Config",

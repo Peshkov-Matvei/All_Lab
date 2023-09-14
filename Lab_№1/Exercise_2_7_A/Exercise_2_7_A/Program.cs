@@ -5,14 +5,12 @@
         static void Main(string[] args)
         {
             double x = 0, s = 10;
-            int n = 0;
-            while (n <= 7)
+            for (int n = 1; n <= 7; n++)
             {
-                n += 1;
                 x += s;
                 s = 1.1 * s;
             }
-            Console.WriteLine(x);
+            Console.WriteLine("{0:f4}", x);
         }
     }
 }
