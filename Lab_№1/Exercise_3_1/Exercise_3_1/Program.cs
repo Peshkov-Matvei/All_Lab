@@ -8,10 +8,10 @@
             n = (b - a) / h + 1;
             for (int j = 1; j <= n; j++)
             {
-                g = 1; s = 1; fact = 1;
+                g = 1; s = 0; fact = 1;
                 for  (int i = 0; Math.Abs(g) >= c; i++)
                 {
-                    p = - p; 
+                    p = - p;
                     for (int t = 1; t <= 2 * i; t++)
                     {
                         fact *= t;
