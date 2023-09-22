@@ -1,4 +1,4 @@
-﻿namespace Exersice_3_2
+namespace Exersice_3_2
 {
     internal class Program
     {
@@ -9,7 +9,7 @@
             x = a;
             for (int j = 1; j <= n; j++)
             {
-                s = 1; g = 1;
+                s = 0; g = 1;
                 for (int i = 1; Math.Abs(g) >= c; i += 1)
                 {
                     g = Math.Pow(x, i) * Math.Sin(i * Math.PI / 4);
