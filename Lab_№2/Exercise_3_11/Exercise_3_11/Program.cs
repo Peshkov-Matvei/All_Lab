@@ -34,7 +34,7 @@
                 Console.WriteLine("Введите '-', если не хотите добавить ученика");
                 start = Console.ReadLine();
             } while (start == "+");
-            Console.WriteLine("Средни балл класса: {0}", s / count);
+            Console.WriteLine("Средни балл класса: {0}", s / (4 * count));
             Console.WriteLine("Количество неуспевающих учеников: {0}", n);
         }
     }
