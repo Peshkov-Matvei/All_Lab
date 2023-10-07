@@ -1,5 +1,4 @@
-﻿using System.Linq;
-namespace Exercise_2_6
+﻿namespace Exercise_2_6
 {
     internal class Program
     {
