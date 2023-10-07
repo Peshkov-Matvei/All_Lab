@@ -1,4 +1,6 @@
-﻿namespace Exercise_2_10
+﻿using System;
+
+namespace Exercise_2_10
 {
     internal class Program
     {
@@ -10,11 +12,14 @@
             int[] f = new int[n - 1];
             Console.WriteLine("Введите значений массива через пробел");
             string[] c = Console.ReadLine().Split();
-            int smin = int.Parse(c[0]);
+            int smin = 100000000;
             for (int i = 0; i < n; i++)
             {
                 s[i] = int.Parse(c[i]);
-                smin = Math.Min(smin, s[i]);
+                if (s[i] >= 0)
+                {
+                    smin = Math.Min(smin, s[i]);
+                }
             }
             int j = 0;
             for (int i = 0; i < n; i++)
