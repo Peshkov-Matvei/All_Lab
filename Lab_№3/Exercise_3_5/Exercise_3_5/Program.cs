@@ -8,14 +8,7 @@
             int n = int.Parse(Console.ReadLine());
             int[] a = new int[n];
             int l;
-            if (n % 2 == 0)
-            {
-                l = n;
-            }
-            else
-            {
-                l = n + 1;
-            }
+            if (n % 2 == 0) l = n / 2; else l = n / 2 + 1;
             int[] b = new int[l];
             Console.WriteLine("Введите значения массива через пробел");
             string[] c = Console.ReadLine().Split();
@@ -23,21 +16,12 @@
             for (int i = 0; i < n; i++)
             {
                 a[i] = int.Parse(c[i]);
-                if (i % 2 == 0)
-                {
-                    b[r++] = int.Parse(c[i]);
-                }
+                if (i % 2 == 0) b[r++] = int.Parse(c[i]);
             }
             Array.Sort(b);
             int j = 0;
-            for (int i = 0; i < n; i+=2)
-            {
-                a[i] = b[j++];
-            }
-            for (int i = 0; i < n; i++)
-            {
-                Console.Write($"{a[i]} ");
-            }
+            for (int i = 0; i < n; i+=2) a[i] = b[j++];
+            for (int i = 0; i < n; i++) Console.Write($"{a[i]} ");
         }
     }
 }
