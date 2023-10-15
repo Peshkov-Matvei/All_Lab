@@ -9,16 +9,31 @@
             int[] a = new int[n];
             Console.WriteLine("Введите значения массива через пробел");
             string[] c = Console.ReadLine().Split();
-            int r = 0, l = 0;
+            string s = "";
             for (int i = 0; i < n; i++)
             {
                 a[i] = int.Parse(c[i]);
                 if (a[i] < 0)
                 {
-                    l++;
+                    s += (c[i] + " ");
                 }
             }
-            int[] b = new int[l];
+            string[] b = s.Split();
+            int[] f = new int[b.Length - 1];
+            for (int i = 0; i < b.Length - 1; i++)
+            {
+                f[i] = int.Parse(b[i]);
+            }
+            Array.Sort(f);
+            int q = f.Length - 1;
+            for (int i = 0; i < n; i++)
+            {
+                if (a[i] < 0)
+                {
+                    a[i] = f[q--];
+                }
+                Console.Write("{0} ", a[i]);
+            }
         }
     }
 }
