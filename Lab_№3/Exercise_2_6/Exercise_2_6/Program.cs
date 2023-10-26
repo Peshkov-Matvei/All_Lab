@@ -13,7 +13,7 @@
             {
                 s[i] = int.Parse(c[i]);
             }
-            int srz = s.Sum() / 2;
+            int srz = s.Sum() / n;
             Console.WriteLine("Введите число");
             int p = int.Parse(Console.ReadLine());
             int raz = Math.Abs(srz - s[0]);
