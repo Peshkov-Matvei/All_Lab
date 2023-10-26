@@ -12,7 +12,7 @@ namespace Exercise_2_10
             int[] f = new int[n - 1];
             Console.WriteLine("Введите значений массива через пробел");
             string[] c = Console.ReadLine().Split();
-            int smin = 100000000;
+            int smin = 2147483547;
             for (int i = 0; i < n; i++)
             {
                 s[i] = int.Parse(c[i]);

@@ -37,11 +37,13 @@
                     else
                     {
                         f[i] = a[i];
-                        for (int j = 0; j <= m; j++)
+                        int j = 0;
+                        for (; j < m; j++)
                         {
                             f[i + j + 1] = b[j];
                             Console.Write($"{f[i + j]} ");
                         }
+                        Console.Write($"{f[i + j]} ");
                         i += m;
                         y = m;
                     }
