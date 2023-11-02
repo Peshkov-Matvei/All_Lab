@@ -10,7 +10,7 @@
                                     { 10, 5, 4, -3, 14},
                                     { 52, 65 , 99, 44, -9},
                                      };
-            int f_max = f[0, 0], f_id = 0, f_min, test = 0;
+            int f_id = 0, f_min, test = 0;
             for (int i = 0; i < 4; i++)
             {
                 f_min = f[i, 0];
