@@ -16,13 +16,13 @@
             }
             for (int i = 0; i < n - 1; i++)
             {
-                if (a[i] < a[i + 1]) l++;
+                if (a[i] <= a[i + 1]) l++;
                 else 
                 {
                     max = Math.Max(max, l);
                     l = 1; 
                 }
-                if (a[i] > a[i + 1]) m++;
+                if (a[i] >= a[i + 1]) m++;
                 else
                 {
                     max = Math.Max(max, m);
