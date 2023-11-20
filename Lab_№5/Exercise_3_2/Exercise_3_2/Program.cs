@@ -53,7 +53,6 @@
         static void Main(string[] args)
         {
             const int n = 6;
-            int[] t = new int[n];
             int[,] f = new int[n, n] {
                                     { -10, -6, 92, 70, 50, 45},
                                     { 10, 500, 34, 70, -14, 1},
@@ -66,7 +65,6 @@
             fi nechet = NeChet;
             for (int i = 0; i < n; i++)
             {
-                for (int j = 0; j < 6; j++) t[j] = f[i, j];
                 if (i % 2 == 0)
                 {
                     f = P(chet(f, i), f, i);
