@@ -52,11 +52,11 @@
                     {
                         amax = sp1[j].srz;
                         imax = j;
+                        Student temp;
+                        temp = sp1[imax];
+                        sp1[imax] = sp1[i];
+                        sp1[i] = temp;
                     }
-                    Student temp;
-                    temp = sp1[imax];
-                    sp1[imax] = sp1[i];
-                    sp1[i] = temp;
                 }
             }
             for (int i = 0; i < sp1.Length; i++)
@@ -74,11 +74,11 @@
                     {
                         amax = sp2[j].srz;
                         imax = j;
+                        Student temp;
+                        temp = sp2[imax];
+                        sp2[imax] = sp2[i];
+                        sp2[i] = temp;
                     }
-                    Student temp;
-                    temp = sp2[imax];
-                    sp2[imax] = sp2[i];
-                    sp2[i] = temp;
                 }
             }
             for (int i = 0; i < sp2.Length; i++)
