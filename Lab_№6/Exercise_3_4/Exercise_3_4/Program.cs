@@ -1,0 +1,102 @@
+﻿namespace Exercise_3_4
+{
+    internal class Program
+    {
+        struct Sport
+        {
+            public string fam;
+            public int points;
+            public Sport (string fam, int points)
+            {
+                this.fam = fam;
+                this.points = points;
+            }
+        }
+        static void Main(string[] args)
+        {
+            Sport[] g1 = new Sport[3];
+            Sport[] g2 = new Sport[3];
+            g1[0] = new Sport("Иванов", 110);
+            g1[1] = new Sport("Сидоров", 134);
+            g1[2] = new Sport("Петров", 98);
+            g2[0] = new Sport("Занудов", 32);
+            g2[1] = new Sport("Лунов", 140);
+            g2[2] = new Sport("Ленов", 90);
+            int k;
+            double amax;
+            for (int i = 0; i < g1.Length; i++)
+            {
+                amax = g1[i].points;
+                for (int j = i + 1; j < g1.Length; j++)
+                {
+                    if (amax < g1[j].points)
+                    {
+                        amax = g1[j].points;
+                        Sport temp;
+                        temp = g1[j];
+                        g1[j] = g1[i];
+                        g1[i] = temp;
+                    }
+                }
+            }
+            Console.WriteLine("Группа 1:");
+            for (int i = 0; i < g1.Length; i++)
+            {
+                Console.WriteLine("{0} - {1}", g1[i].fam, g1[i].points);
+            }
+            for (int i = 0; i < g2.Length; i++)
+            {
+                amax = g2[i].points;
+                for (int j = i + 1; j < g2.Length; j++)
+                {
+                    if (amax < g2[j].points)
+                    {
+                        amax = g2[j].points;
+                        Sport temp;
+                        temp = g2[j];
+                        g2[j] = g2[i];
+                        g2[i] = temp;
+                    }
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine("Группа 2:");
+            for (int i = 0; i < g2.Length; i++)
+            {
+                Console.WriteLine("{0} - {1}", g2[i].fam, g2[i].points);
+            }
+            Sport[] ag = new Sport[g1.Length + g2.Length];
+            int t = 0;
+            for (; t < g1.Length; t++)
+            {
+                ag[t] = new Sport(g1[t].fam, g1[t].points);
+            }
+            for (; t < g1.Length + g2.Length; t++)
+            {
+                ag[t] = new Sport(g2[t - g1.Length].fam, g2[t - g1.Length].points);
+            }
+            Console.WriteLine();
+            for (int i = 0; i < ag.Length; i++)
+            {
+                amax = ag[i].points;
+                for (int j = i + 1; j < ag.Length; j++)
+                {
+                    if (amax < ag[j].points)
+                    {
+                        amax = ag[j].points;
+                        Sport temp;
+                        temp = ag[j];
+                        ag[j] = ag[i];
+                        ag[i] = temp;
+                    }
+                }
+            }
+            Console.WriteLine();
+            Console.WriteLine("Список участников соревнования:");
+            for (int i = 0; i < ag.Length; i++)
+            {
+                Console.WriteLine("{0} - {1}",ag[i].fam, ag[i].points);
+            }
+        }
+    }
+}
