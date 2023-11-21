@@ -19,7 +19,7 @@
         }
         static void Main(string[] args)
         {
-            Student[] sp1 = new Student[3];
+            Student[] sp1 = new Student[4];
             Console.WriteLine("Первая группа");
             sp1[0] = new Student("Иванов", 4, 4, 3, 5);
             Console.WriteLine("Фамилия: {0}, Средний балл: {1}", sp1[0].famile, sp1[0].srz);
@@ -27,6 +27,8 @@
             Console.WriteLine("Фамилия: {0}, Средний балл: {1}", sp1[1].famile, sp1[1].srz);
             sp1[2] = new Student("Петров", 2, 2, 3, 2);
             Console.WriteLine("Фамилия: {0}, Средний балл: {1}", sp1[2].famile, sp1[2].srz);
+            sp1[3] = new Student("Ленов", 2, 5, 3, 2);
+            Console.WriteLine("Фамилия: {0}, Средний балл: {1}", sp1[3].famile, sp1[3].srz);
             Console.WriteLine();
             Student[] sp2 = new Student[3];
             Console.WriteLine("Вторая группа");
@@ -51,10 +53,10 @@
                         amax = sp1[j].srz;
                         imax = j;
                     }
-                    Student temp1;
-                    temp1 = sp1[imax];
+                    Student temp;
+                    temp = sp1[imax];
                     sp1[imax] = sp1[i];
-                    sp1[i] = temp1;
+                    sp1[i] = temp;
                 }
             }
             for (int i = 0; i < sp1.Length; i++)
@@ -73,10 +75,10 @@
                         amax = sp2[j].srz;
                         imax = j;
                     }
-                    Student temp2;
-                    temp2 = sp1[imax];
-                    sp1[imax] = sp2[i];
-                    sp1[i] = temp2;
+                    Student temp;
+                    temp = sp2[imax];
+                    sp2[imax] = sp2[i];
+                    sp2[i] = temp;
                 }
             }
             for (int i = 0; i < sp2.Length; i++)
