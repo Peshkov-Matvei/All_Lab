@@ -25,16 +25,20 @@
             jap[7] = new Opros("лама", "никакая", "сакура");
             Dictionary<int, string> animal = new Dictionary<int, string>(jap.Length)
             {
-                [1] = "Яблоко",
+                [1] = "кот",
                 [2] = "Апельсин",
                 [3] = "Груша"
             };
+            int k;
             for (int i = 0; i < jap.Length; i++)
             {
+                k = 0;
                 foreach (var answer in animal)
                 {
-                    Console.WriteLine(answer.Value);
-                    break;
+                    if (jap[i].answer1 == answer.Value)
+                    {
+                        
+                    }
                 }
             }
         }
