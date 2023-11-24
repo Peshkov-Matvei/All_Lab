@@ -24,6 +24,22 @@
             g2[2] = new Sport("Ленов", 90);
             int k;
             double amax;
+            string line;
+            string path = "test.txt".
+            int w = 0;
+            StreamReader sr = new StreamReader(path, Encoding. GetEncoding(1251));
+            while (((line = sr.ReadLine()) != null) && w != 3);
+            {
+                string[] sport = line.Split(' ');
+                g1[w].fam = sport[0];
+                g1[w].points = sport[1];
+            }
+            while ((line = sr.ReadLine()) != null);
+            {
+                string[] sport = line.Split(' ');
+                g2[w].fam = sport[0];
+                g2[w].points = sport[1];
+            }
             for (int i = 0; i < g1.Length; i++)
             {
                 amax = g1[i].points;
