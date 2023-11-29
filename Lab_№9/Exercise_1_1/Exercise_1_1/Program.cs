@@ -1,67 +1,86 @@
-﻿namespace Exercise_3_1
+﻿using System;
+using System.Text;
+using System.IO;
+
+namespace Exercise_3_1
 {
-    class Student
-    {
-        public string familia = " ";
-        public int rez1, rez2, rez3, rez4, rez5;
-        public double srz;
-        public void Getsrz(string familia1, int rez11, int rez21, int rez31, int rez41, int rez51)
-        {
-            familia = familia1;
-            rez1 = rez11;
-            rez2 = rez21;
-            rez3 = rez31;
-            rez4 = rez41;
-            rez5 = rez51;
-            srz = (rez1 + rez2 + rez3 + rez4 + rez5) / 5.0;
-        }
-    }
-    class StudentStep : Student
-    {
-        public double step;
-        public void Step()
-        {
-            step = srz * 1000;
-        }
-    }
-    class Group
-    {
-        public int number;
-        public int count;
-        public double srz, sum;
-        public Group(int number1, int count1, double sum1)
-        {
-            number = number1;
-            count = count1;
-            sum = sum1;
-            srz = sum / count;
-        }
-    }
     internal class Program
     {
+        struct Student
+        {
+            public string familia;
+            public int rez1, rez2, rez3, rez4, rez5;
+            public double srz;
+            public Student(string familia1, int rez11, int rez21, int rez31, int rez41, int rez51)
+            {
+                familia = familia1;
+                rez1 = rez11;
+                rez2 = rez21;
+                rez3 = rez31;
+                rez4 = rez41;
+                rez5 = rez51;
+                srz = (rez11 + rez21 + rez31 + rez41 + rez51) / 5.0;
+            }
+        }
+        struct Group
+        {
+            public int number;
+            public int count;
+            public double srz, sum;
+            public Group(int number1, int count1, double sum1)
+            {
+                number = number1;
+                count = count1;
+                sum = sum1;
+                srz = sum / count;
+            }
+        }
         static void Main(string[] args)
         {
-            StreamWriter text = new StreamWriter("text.txt");
-            text.WriteLine(1);
-            Console.WriteLine(text);
             double sum1 = 0, sum2 = 0, sum3 = 0;
-            StudentStep[] s1 = new StudentStep[3];
-            s1[0] = new StudentStep();
-            s1[0].Getsrz("Иванов", 5, 4, 3, 5, 2);
-            s1[1] = new StudentStep();
-            s1[1].Getsrz("Сидоров", 4, 5, 3, 4, 5);
-            s1[2] = new StudentStep();
-            s1[2].Getsrz("Петров", 5, 5, 5, 5, 5);
-            StudentStep[] s2 = new StudentStep[2];
-            s2[0] = new StudentStep();
-            s2[0].Getsrz("Занудов", 3, 5, 2, 3, 3);
-            s2[1] = new StudentStep();
-            s2[1].Getsrz("Лунов", 4, 5, 5, 4, 3);
-            StudentStep[] s3 = new StudentStep[2];
-            s3[0] = new StudentStep();
-            s3[0].Getsrz("Ленов", 5, 5, 5, 5, 4);
-            s3[1] = new StudentStep();
-            s3[1].Getsrz("Троцкий", 5, 5, 5, 2, 5);
+            Student[] s1 = new Student[3];
+            s1[0] = new Student("Иванов", 5, 4, 3, 5, 2);
+            s1[1] = new Student("Сидоров", 4, 5, 3, 4, 5);
+            s1[2] = new Student("Петров", 5, 5, 5, 5, 5);
+            Student[] s2 = new Student[2];
+            s2[0] = new Student("Занудов", 3, 5, 2, 3, 3);
+            s2[1] = new Student("Лунов", 4, 5, 5, 4, 3);
+            Student[] s3 = new Student[2];
+            s3[0] = new Student("Ленов", 5, 5, 5, 5, 4);
+            s3[1] = new Student("Троцкий", 5, 5, 5, 2, 5);
+            string line;
+            string path = @"D:\Dev\test.txt";
+            int w = 0;
+            StreamReader sr = new StreamReader(path);
+            while (((line = sr.ReadLine()) != null) && (w != 3))
+            {
+                string[] st = line.Split(' ');
+                s1[w].rez1 = int.Parse(st[0]);
+                s1[w].rez2 = int.Parse(st[1]);
+                s1[w].rez3 = int.Parse(st[2]);
+                s1[w].rez4 = int.Parse(st[3]);
+                s1[w].rez5 = int.Parse(st[4]);
+                w++;
+            }
+            while (((line = sr.ReadLine()) != null) && (w != 6))
+            {
+                string[] st = line.Split(' ');
+                s2[w].rez1 = int.Parse(st[0]);
+                s2[w].rez2 = int.Parse(st[1]);
+                s2[w].rez3 = int.Parse(st[2]);
+                s2[w].rez4 = int.Parse(st[3]);
+                s2[w].rez5 = int.Parse(st[4]);
+                w++;
+            } 
+            while ((line = sr.ReadLine()) != null)
+            {
+                string[] st = line.Split(' ');
+                s3[w].rez1 = int.Parse(st[0]);
+                s3[w].rez2 = int.Parse(st[1]);
+                s3[w].rez3 = int.Parse(st[2]);
+                s3[w].rez4 = int.Parse(st[3]);
+                s3[w].rez5 = int.Parse(st[4]);
+            }
             for (int i = 0; i < s1.Length; i++)
             {
                 sum1 += s1[i].srz;
@@ -78,6 +97,7 @@
             g[0] = new Group(1, s1.Length, sum1);
             g[1] = new Group(2, s2.Length, sum2);
             g[2] = new Group(3, s3.Length, sum3);
+            int k;
             double amax;
             for (int i = 0; i < s1.Length; i++)
             {
@@ -87,7 +107,7 @@
                     if (amax < s1[j].srz)
                     {
                         amax = s1[j].srz;
-                        StudentStep temp;
+                        Student temp;
                         temp = s1[j];
                         s1[j] = s1[i];
                         s1[i] = temp;
@@ -97,11 +117,7 @@
             Console.WriteLine("Группа 1:");
             for (int i = 0; i < s1.Length; i++)
             {
-                if (s1[i].srz >= 4.0)
-                {
-                    s1[i].Step();
-                    Console.WriteLine("{0} - {1}. Стипендия - {2}", s1[i].familia, s1[i].srz, s1[i].step);
-                }
+                if (s1[i].srz >= 4.0) Console.WriteLine("{0} - {1}", s1[i].familia, s1[i].srz);
             }
             Console.WriteLine();
             for (int i = 0; i < s2.Length; i++)
@@ -112,7 +128,7 @@
                     if (amax < s2[j].srz)
                     {
                         amax = s2[j].srz;
-                        StudentStep temp;
+                        Student temp;
                         temp = s2[j];
                         s2[j] = s2[i];
                         s2[i] = temp;
@@ -122,11 +138,7 @@
             Console.WriteLine("Группа 2:");
             for (int i = 0; i < s2.Length; i++)
             {
-                if (s2[i].srz >= 4.0)
-                {
-                    s2[i].Step();
-                    Console.WriteLine("{0} - {1}. Стипендия - {2}", s2[i].familia, s2[i].srz, s2[i].step);
-                }
+                if (s2[i].srz >= 4.0) Console.WriteLine("{0} - {1}", s2[i].familia, s2[i].srz);
             }
             Console.WriteLine();
             for (int i = 0; i < s3.Length; i++)
@@ -137,7 +149,7 @@
                     if (amax < s3[j].srz)
                     {
                         amax = s3[j].srz;
-                        StudentStep temp;
+                        Student temp;
                         temp = s3[j];
                         s3[j] = s3[i];
                         s3[i] = temp;
@@ -147,11 +159,7 @@
             Console.WriteLine("Группа 3:");
             for (int i = 0; i < s3.Length; i++)
             {
-                if (s3[i].srz >= 4.0)
-                {
-                    s3[i].Step();
-                    Console.WriteLine("{0} - {1}. Стипендия - {2}", s3[i].familia, s3[i].srz, s3[i].step);
-                }
+                if (s3[i].srz >= 4.0) Console.WriteLine("{0} - {1}", s3[i].familia, s3[i].srz);
             }
             Console.WriteLine();
             for (int i = 0; i < g.Length; i++)

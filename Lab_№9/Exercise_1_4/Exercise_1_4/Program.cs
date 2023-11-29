@@ -1,4 +1,8 @@
-﻿namespace Exercise_3_4
+﻿using System;
+using System.Text;
+using System.IO;
+
+namespace Exercise_3_4
 {
     internal class Program
     {
@@ -6,7 +10,7 @@
         {
             public string fam;
             public int points;
-            public Sport (string fam, int points)
+            public Sport(string fam, int points)
             {
                 this.fam = fam;
                 this.points = points;
@@ -16,29 +20,24 @@
         {
             Sport[] g1 = new Sport[3];
             Sport[] g2 = new Sport[3];
-            g1[0] = new Sport("Иванов", 110);
-            g1[1] = new Sport("Сидоров", 134);
-            g1[2] = new Sport("Петров", 98);
-            g2[0] = new Sport("Занудов", 32);
-            g2[1] = new Sport("Лунов", 140);
-            g2[2] = new Sport("Ленов", 90);
-            int k;
             double amax;
             string line;
-            string path = "test.txt".
+            string path = @"D:\Dev\test.txt";
             int w = 0;
-            StreamReader sr = new StreamReader(path, Encoding. GetEncoding(1251));
-            while (((line = sr.ReadLine()) != null) && w != 3);
+            StreamReader sr = new StreamReader(path);
+            while (((line = sr.ReadLine()) != null) && (w != 3))
             {
                 string[] sport = line.Split(' ');
                 g1[w].fam = sport[0];
-                g1[w].points = sport[1];
+                g1[w].points = int.Parse(sport[1]);
+                w++;
             }
-            while ((line = sr.ReadLine()) != null);
+            while ((line = sr.ReadLine()) != null)
             {
                 string[] sport = line.Split(' ');
                 g2[w].fam = sport[0];
-                g2[w].points = sport[1];
+                g2[w].points = int.Parse(sport[1]);
+                w++;
             }
             for (int i = 0; i < g1.Length; i++)
             {
@@ -111,7 +110,7 @@
             Console.WriteLine("Список участников соревнования:");
             for (int i = 0; i < ag.Length; i++)
             {
-                Console.WriteLine("{0} - {1}",ag[i].fam, ag[i].points);
+                Console.WriteLine("{0} - {1}", ag[i].fam, ag[i].points);
             }
         }
     }
