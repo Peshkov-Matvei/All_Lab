@@ -22,21 +22,21 @@ namespace Exercise_3_4
             Sport[] g2 = new Sport[3];
             double amax;
             string line;
-            string path = @"D:\Dev\test.txt";
+            string path = @"text.txt";
             int w = 0;
             StreamReader sr = new StreamReader(path);
-            while (((line = sr.ReadLine()) != null) && (w != 3))
+            while (w != g1.Length)
             {
+                line = sr.ReadLine();
                 string[] sport = line.Split(' ');
-                g1[w].fam = sport[0];
-                g1[w].points = int.Parse(sport[1]);
+                g1[w] = new Sport(sport[0], int.Parse(sport[1]));
                 w++;
             }
+            w = 0;
             while ((line = sr.ReadLine()) != null)
             {
                 string[] sport = line.Split(' ');
-                g2[w].fam = sport[0];
-                g2[w].points = int.Parse(sport[1]);
+                g2[w] = new Sport(sport[0], int.Parse(sport[1]));
                 w++;
             }
             for (int i = 0; i < g1.Length; i++)
