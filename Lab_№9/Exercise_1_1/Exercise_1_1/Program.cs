@@ -39,47 +39,30 @@ namespace Exercise_3_1
         {
             double sum1 = 0, sum2 = 0, sum3 = 0;
             Student[] s1 = new Student[3];
-            s1[0] = new Student("Иванов", 5, 4, 3, 5, 2);
-            s1[1] = new Student("Сидоров", 4, 5, 3, 4, 5);
-            s1[2] = new Student("Петров", 5, 5, 5, 5, 5);
             Student[] s2 = new Student[2];
-            s2[0] = new Student("Занудов", 3, 5, 2, 3, 3);
-            s2[1] = new Student("Лунов", 4, 5, 5, 4, 3);
             Student[] s3 = new Student[2];
-            s3[0] = new Student("Ленов", 5, 5, 5, 5, 4);
-            s3[1] = new Student("Троцкий", 5, 5, 5, 2, 5);
             string line;
-            string path = @"D:\Dev\test.txt";
+            string path = @"text.txt";
             int w = 0;
             StreamReader sr = new StreamReader(path);
-            while (((line = sr.ReadLine()) != null) && (w != 3))
+            while (w != 3)
             {
+                line = sr.ReadLine();
                 string[] st = line.Split(' ');
-                s1[w].rez1 = int.Parse(st[0]);
-                s1[w].rez2 = int.Parse(st[1]);
-                s1[w].rez3 = int.Parse(st[2]);
-                s1[w].rez4 = int.Parse(st[3]);
-                s1[w].rez5 = int.Parse(st[4]);
-                w++;
+                s1[w++] = new Student(st[0], int.Parse(st[1]), int.Parse(st[2]), int.Parse(st[3]), int.Parse(st[4]), int.Parse(st[5]));
             }
-            while (((line = sr.ReadLine()) != null) && (w != 6))
+            w = 0;
+            while (w != 2)
             {
+                line = sr.ReadLine();
                 string[] st = line.Split(' ');
-                s2[w].rez1 = int.Parse(st[0]);
-                s2[w].rez2 = int.Parse(st[1]);
-                s2[w].rez3 = int.Parse(st[2]);
-                s2[w].rez4 = int.Parse(st[3]);
-                s2[w].rez5 = int.Parse(st[4]);
-                w++;
-            } 
+                s2[w++] = new Student(st[0], int.Parse(st[1]), int.Parse(st[2]), int.Parse(st[3]), int.Parse(st[4]), int.Parse(st[5]));
+            }
+            w = 0;
             while ((line = sr.ReadLine()) != null)
             {
                 string[] st = line.Split(' ');
-                s3[w].rez1 = int.Parse(st[0]);
-                s3[w].rez2 = int.Parse(st[1]);
-                s3[w].rez3 = int.Parse(st[2]);
-                s3[w].rez4 = int.Parse(st[3]);
-                s3[w].rez5 = int.Parse(st[4]);
+                s3[w++] = new Student(st[0], int.Parse(st[1]), int.Parse(st[2]), int.Parse(st[3]), int.Parse(st[4]), int.Parse(st[5]));
             }
             for (int i = 0; i < s1.Length; i++)
             {
